@@ -19,6 +19,7 @@
   padding: 30px;
 }
 
+
 .navbar{
     width: 100dvw;
     text-align: center;
@@ -114,5 +115,47 @@ Display inline-block :
 
 .hidden{
     visibility: hidden;
+}
+
+
+/* 
+- bisa dipindahkan dari posisi aslinya
+- bisa menumpuk elemen
+ */
+.postion-relative{
+    position: relative;
+    top: 100px;
+    right: 10px;
+    background-color: #0088cc;
+}
+
+.mt{
+    margin-top: 20px;
+}
+
+.card-relative{
+    position: relative;
+}
+
+.promo{
+    background-color: #ff0000;
+    padding: 10px;
+    margin-top: 20px;
+    position: absolute;
+    right: 10px;
+    top: 1px;
+}
+
+.fixed{
+    position: fixed;
+    background: #f9f9f9;
+    z-index: 1;
+}
+
+.card-sticky{
+    position: sticky;
+    top: 0;
+    bottom: 0;
+    z-index: 10;
 }
 
