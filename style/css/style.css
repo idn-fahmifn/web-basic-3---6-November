@@ -12,7 +12,7 @@
 */
 .container {
   /* px, %, vw/dvw */
-  width: 80dvw;
+  min-width: 80dvw;
   min-height: 30dvh;
   border: 0.4px #45454570 solid;
   background-color: #f9f9f9;
@@ -20,7 +20,7 @@
 }
 
 .area-display {
-  width: 80%;
+  width: 90%;
   height: 100%;
   border: 0.4px #45454570 solid;
   background-color: #f9f9f9;
