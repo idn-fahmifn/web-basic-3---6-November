@@ -4,7 +4,12 @@
   font-family: "TASA Explorer", sans-serif;
 }
 
-/* Ukuran */
+/*
+ Ukuran 
+ flat = pasti
+ min height : nilai minimal
+ max height : nilai maximal
+*/
 .container {
   /* px, %, vw/dvw */
   width: 80dvw;
@@ -14,9 +19,29 @@
   padding: 30px;
 }
 
-.title{
-    font-family: "Pinyon Script", cursive, sans-serif;
-    font-size: 3em;
+.title {
+  font-family: "Pinyon Script", cursive, sans-serif;
+  font-size: 3em;
 }
 
+.card {
+  width: 300px;
+  min-height: 20px;
+  border: 0.4px #45454570 solid;
+  padding: 20px;
+  margin: 30px;
+}
 
+/* 
+display block
+- Menguasai 1 Baris Parent
+- Jika ada elemen baru, maka akan membuat baris baru
+*/
+
+.card-block {
+  display: block;
+  min-height: 20px;
+  border: 0.4px #45454570 solid;
+  padding: 20px;
+  margin: 30px;
+}
