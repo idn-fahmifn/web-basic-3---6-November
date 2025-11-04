@@ -102,8 +102,17 @@ Display inline-block :
 .card-inline-block {
   display: inline-block;
   width: 25%;
+  height: 40px;
   border: 0.4px #45454570 solid;
   padding: 20px;
   margin: 10px;
+}
+
+.card-none{
+    display: none;
+}
+
+.hidden{
+    visibility: hidden;
 }
 
