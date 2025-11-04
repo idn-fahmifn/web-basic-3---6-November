@@ -19,27 +19,26 @@
   padding: 30px;
 }
 
-
-.navbar{
-    width: 100dvw;
-    text-align: center;
-    padding: 30px;
+.navbar {
+  width: 100dvw;
+  text-align: center;
+  padding: 30px;
 }
 
-li{
-    display: inline;
-    margin: 5px;
-    padding: 10px;
+li {
+  display: inline;
+  margin: 5px;
+  padding: 10px;
 }
 
-li:hover{
-    border-bottom: 3px #0088cc solid;
+li:hover {
+  border-bottom: 3px #0088cc solid;
 }
 
-a{
-    text-decoration: none;
-    color: #343434;
-    font-weight: 600;
+a {
+  text-decoration: none;
+  color: #343434;
+  font-weight: 600;
 }
 
 .area-display {
@@ -85,8 +84,8 @@ Display inline :
 - padding semua berlaku
 - Ukuran tidak bisa diubah
 */
-.text-inline{
-    margin-bottom: 40px;
+.text-inline {
+  margin-bottom: 40px;
 }
 .card-inline {
   display: inline;
@@ -109,53 +108,70 @@ Display inline-block :
   margin: 10px;
 }
 
-.card-none{
-    display: none;
+.card-none {
+  display: none;
 }
 
-.hidden{
-    visibility: hidden;
+.hidden {
+  visibility: hidden;
 }
-
 
 /* 
 - bisa dipindahkan dari posisi aslinya
 - bisa menumpuk elemen
  */
-.postion-relative{
-    position: relative;
-    top: 100px;
-    right: 10px;
-    background-color: #0088cc;
+.postion-relative {
+  position: relative;
+  top: 100px;
+  right: 10px;
+  background-color: #0088cc;
 }
 
-.mt{
-    margin-top: 20px;
+.mt {
+  margin-top: 20px;
 }
 
-.card-relative{
-    position: relative;
+.card-relative {
+  position: relative;
 }
 
-.promo{
-    background-color: #ff0000;
-    padding: 10px;
-    margin-top: 20px;
-    position: absolute;
-    right: 10px;
-    top: 1px;
+.promo {
+  background-color: #ff0000;
+  padding: 10px;
+  margin-top: 20px;
+  position: absolute;
+  right: 10px;
+  top: 1px;
 }
 
-.fixed{
-    position: fixed;
-    background: #f9f9f9;
-    z-index: 1;
+.fixed {
+  position: fixed;
+  background: #f9f9f9;
+  z-index: 1;
 }
 
-.card-sticky{
-    position: sticky;
-    top: 0;
-    bottom: 0;
-    z-index: 10;
+.card-sticky {
+  position: sticky;
+  top: 0;
+  bottom: 0;
+  z-index: 10;
 }
 
+.mt-10 {
+  margin-top: 100px;
+}
+
+.d-flex {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.card-flex{
+    flex-grow: 1;
+}
+
+.d-grid{
+    display: grid;
+    grid-template-columns: repeat(3, 400px);
+}
