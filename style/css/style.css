@@ -1,6 +1,7 @@
 * {
   padding: 0;
   margin: 0;
+  font-family: "TASA Explorer", sans-serif;
 }
 
 /* Ukuran */
@@ -10,8 +11,12 @@
   height: 60dvh;
   border: 0.4px #45454570 solid;
   background-color: #f9f9f9;
+  padding: 30px;
 }
 
-.font-tiktok {
-  font-family: "TikTok Sans", sans-serif;
+.title{
+    font-family: "Pinyon Script", cursive, sans-serif;
+    font-size: 3em;
 }
+
+
