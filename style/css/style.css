@@ -19,6 +19,28 @@
   padding: 30px;
 }
 
+.navbar{
+    width: 100dvw;
+    text-align: center;
+    padding: 30px;
+}
+
+li{
+    display: inline;
+    margin: 5px;
+    padding: 10px;
+}
+
+li:hover{
+    border-bottom: 3px #0088cc solid;
+}
+
+a{
+    text-decoration: none;
+    color: #343434;
+    font-weight: 600;
+}
+
 .area-display {
   width: 90%;
   height: 100%;
