@@ -43,6 +43,42 @@ console.log(contoh);
 let kosong  = null
 console.log(kosong + isMakan)
 
+// Tipe data object
+
+let saya = {
+    'nama' : 'Fahmi Nuradi',
+    'umur' : 23,
+    'asal' : 'Jakarta Barat',
+    'menikah' : false,
+    'pendidikan' : {
+        'sd' : 'SDN 1 Jakarta',
+        'smp' : 'SMPN 1 Jakarta'
+    }
+}
+// Halo nama saya [nama], sdaya umurnya [umur], dulu saya sd di [nama sd] dan smpnya di [smp]
+console.log(`Haloo nama saya ${saya.nama}, Saya umurnya ${saya.umur}. 
+Dulu saya sd di ${saya.pendidikan.sd} dan saya melanjutkan smp di ${saya.pendidikan.smp}`)
+
+// Tipe data array : 
+let buah = ['Apel', 'Durian', 'Nanas', 'Jeruk'];
+console.log(buah[1]);
+
+// Modifikasi data array
+// 1. menambahkan data dari awal/dari akhir array
+buah.push('alpukat'); //menambah data di index terakhir
+console.log(buah);
+
+buah.pop(); //menghapus data di index terakhir
+console.log(buah);
+
+// 2. menghapus data dari awal/dari akhir array
+buah.unshift('Alpukat') //menambah data di awal index
+console.log(buah);
+
+buah.shift() //Menghapus data di awal index
+console.log(buah);
+
+
 
 
 
