@@ -178,3 +178,56 @@ Display inline-block :
     display: grid;
     grid-template-columns: repeat(3, 400px);
 }
+
+.bounce{
+  animation: bounce 5s infinite alternate;
+}
+
+.trans-z{
+    transform: translateZ(200px);
+}
+
+
+/* Animation */
+@keyframes bounce {
+  from{
+    transform: translateY(0);
+  }
+
+  to{
+    transform: translateY(-100px) rotate(20deg);
+    background-color: #0088cc;
+  }
+}
+
+@keyframes zoom {
+  0%{
+    transform: translateZ(0);
+  }
+
+  100%{
+    transform: translateZ(200px);
+  }
+}
+
+/* media queries untuk responsif */
+@media (max-width:768px) {
+  .card{
+    background-color: #0088cc;
+  }
+
+  .d-grid{
+    grid-template-columns: repeat(1, 400px);
+  }
+
+  .card-sticky{
+    display: none;
+  }
+}
+
+
+@media screen and (max-width:425px) {
+  .navbar{
+    display: none;
+  }
+}
