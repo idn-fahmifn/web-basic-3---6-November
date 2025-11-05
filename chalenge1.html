@@ -12,42 +12,39 @@
       .container {
         width: 100vw;
         height: 100vh;
-        background: #08c;
+        background:linear-gradient(to top right, #FEFFC2, #ffd2a5, #d38cad);
+        background-size: 200%;
         display: flex;
         justify-content: center;
         align-items: center;
         flex-direction: column;
-      }
-      .ball {
-        width: 50px;
-        height: 50px;
-        border-radius: 100%;
-        background: #ffae00;
-        margin: 60px;
-        animation: bounce 1s ease-in-out infinite alternate;
-      }
-      .text-loading {
-        color: #fff;
-        margin-top: 20px;
+        animation: gradient 3s infinite alternate;
       }
 
-      /* animation */
-      @keyframes bounce {
-        0% {
-          transform: translateY(0);
+      @keyframes gradient {
+        0%{
+            background-size: 200%;
+            background-position: center;
         }
-        50% {
-          transform: translateY(50px) scaleX(1.2);
+        50%{
+            background-size: 150%;
+            background-position: right;
+        }
+         50%{
+            background-size: 250%;
+            background-position: top;
+        }
+         100%{
+            background-size: 200%;
+            background-position: left;
         }
       }
+      
     </style>
   </head>
   <body>
     <div class="container">
-      <div class="ball"></div>
-      <div class="text-loading">
-        <h1>Bounce Loading Ball</h1>
-      </div>
+      
     </div>
   </body>
 </html>
