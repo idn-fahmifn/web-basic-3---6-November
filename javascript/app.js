@@ -129,12 +129,17 @@ console.log("perbandingan", gajian && hiling) //false
 console.log("perbandingan", masuk_kerja && hiling) //false
 
 //  or || => salah satu bernilai true
-console.log("perbandingan", gajian || uang) //true
+console.log("perbandingan 3", gajian || uang || masuk_kerja) //false
 console.log("perbandingan", gajian || masuk_kerja) //true
 console.log("perbandingan", hiling || masuk_kerja) //false
 
 // ! not => nilai kebalikan
-console.log("perbandingan", !gajian && masuk_kerja) //false
+// console.log("perbandingan", !gajian && masuk_kerja) //false
+
+// Operator Ternerary
+let age = 10
+let ktp = age >= 17 ? "Berhak punya KTP" : "Belum bisa bikin ktp"
+console.log(ktp)
 
 
 
