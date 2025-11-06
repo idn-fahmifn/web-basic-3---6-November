@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            padding: 0;
+            margin: 0;
+        }
+        .container{
+            width: 80dvw;
+            min-height: 50dvh;
+            border: 0.5px solid #343434;
+            padding: 20px;
+            margin: 20px;
+            background-color: #f7f7f7;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1 id="judul">Hallo saya sedang belajar DOM</h1>
+        <p class="subjudul">Lorem ipsum dolor sit, amet consectetur 
+            adipisicing elit. Est unde molestiae sapiente fuga veritatis. Facilis perspiciatis veniam illum provident doloribus.</p>
+
+        <img src="" alt="Gambar dari Dom" id="gambar">
+
+    </div>
+
+    <script>
+        const elementJudul = document.getElementById('judul')
+        const elementSubJudul = document.querySelector('.subjudul')
+        const image = document.getElementById('gambar')
+
+
+        elementJudul.textContent = "Ini adalah output dari DOM"
+        elementJudul.style.color = '#0088cc';
+
+        image.setAttribute('src','https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ1uiF1L223M9iNw-o926mzjZOZcD-jQbax8g&s')
+        image.setAttribute('width', '300px')
+
+
+    </script>
+
+</body>
+</html>
