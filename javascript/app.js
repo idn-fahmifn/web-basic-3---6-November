@@ -209,25 +209,43 @@ switch (true) {
     console.log("nilai yang kamu masukan salah");
 }
 
-if(nilai >= 0 && nilai <= 60){
-  console.log('Predikat kamu D')
-}
-else if(nilai >= 61 && nilai <= 75){
-  console.log('Predikat kamu C')
-}
-else if(nilai >= 76 && nilai <= 85){
-  console.log('Predikat kamu B')
-}
-else if(nilai >= 85 && nilai <= 100){
-  console.log('Predikat kamu A')
-}
-else{
-  console.log('Input salah')
+if (nilai >= 0 && nilai <= 60) {
+  console.log("Predikat kamu D");
+} else if (nilai >= 61 && nilai <= 75) {
+  console.log("Predikat kamu C");
+} else if (nilai >= 76 && nilai <= 85) {
+  console.log("Predikat kamu B");
+} else if (nilai >= 85 && nilai <= 100) {
+  console.log("Predikat kamu A");
+} else {
+  console.log("Input salah");
 }
 
 // looping
 // Loop dengan for
 
-for(let i = 0; i <= 10; i++){
-  console.log('Saya Sedang mengulang', i)
+for (let i = 0; i <= 10; i++) {
+  console.log("Saya Sedang mengulang", i);
+}
+
+buah = ["Apel", "Durian", "Nanas", "Jeruk", "alpukat", "salak"];
+
+for (let i = 0; i < buah.length; i++) {
+  console.log("Saya suka buah buahan, yaitu : ", buah[i]);
+}
+
+// looping dengan while
+const secret = "fahmi";
+let tebak = "";
+let count = 0;
+
+while (tebak.toLowerCase() !== secret) {
+  tebak = prompt("Hayoo aku siapa?");
+  count++;
+  if(tebak !== secret ){
+    alert(`wkwkwk salah 😋, Kamu udah nebak sebanyak ${count} kali`)
+  }
+}
+if (tebak.toLowerCase() === secret) {
+  alert("Yeay akhirnya bener juga");
 }
