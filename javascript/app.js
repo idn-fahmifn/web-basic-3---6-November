@@ -155,7 +155,7 @@ else {
 }
 
 // switch
-let day = prompt("Masukan hari");
+let day = 30;
 
 switch (
   day //ini adalah variable yang akan dijadikan pembanding
@@ -178,4 +178,56 @@ switch (
   default:
     console.log("Ini hari apa? saya gatau");
     break;
+}
+
+//chalnges
+//  Predikat nilai
+// jika input : 0-60 = D, 61 - 75 = C, 76 - 85 = B, 86 - 100 = A.
+// Jika tidak semuanya, outputnya nilai error
+
+// Mas zam, Mas farel = IF Statement
+// Mas aris, Mas toni, Mas juan = Switch
+// fahmi dua duanya
+
+// switch :
+let nilai = 30;
+
+switch (true) {
+  case nilai >= 0 && nilai <= 60:
+    console.log("Predikat kamu adalah D");
+    break;
+  case nilai >= 61 && nilai <= 75:
+    console.log("Predikat kamu adalah C");
+    break;
+  case nilai >= 76 && nilai <= 85:
+    console.log("Predikat kamu adalah B");
+    break;
+  case nilai >= 86 && nilai <= 100:
+    console.log("Predikat kamu adalah A");
+    break;
+  default:
+    console.log("nilai yang kamu masukan salah");
+}
+
+if(nilai >= 0 && nilai <= 60){
+  console.log('Predikat kamu D')
+}
+else if(nilai >= 61 && nilai <= 75){
+  console.log('Predikat kamu C')
+}
+else if(nilai >= 76 && nilai <= 85){
+  console.log('Predikat kamu B')
+}
+else if(nilai >= 85 && nilai <= 100){
+  console.log('Predikat kamu A')
+}
+else{
+  console.log('Input salah')
+}
+
+// looping
+// Loop dengan for
+
+for(let i = 0; i <= 10; i++){
+  console.log('Saya Sedang mengulang', i)
 }
