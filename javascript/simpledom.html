@@ -17,6 +17,19 @@
             margin: 20px;
             background-color: #f7f7f7;
         }
+
+        .card-container{
+            width: 80%;
+            min-height: 200px;
+            border: solid #343434 0.5px;
+            margin: 10px;
+            padding: 10px;
+        }
+
+        .text-small{
+            font-size: 0.9em;
+        }
+
     </style>
 </head>
 <body>
@@ -25,14 +38,20 @@
         <p class="subjudul">Lorem ipsum dolor sit, amet consectetur 
             adipisicing elit. Est unde molestiae sapiente fuga veritatis. Facilis perspiciatis veniam illum provident doloribus.</p>
 
-        <img src="" alt="Gambar dari Dom" id="gambar">
+        <img src="https://test.com" alt="Gambar dari Dom" id="gambar">
+
+        <div class="card-container" id="area"></div>
+        <div class="card-container" id="content"></div>
 
     </div>
+
 
     <script>
         const elementJudul = document.getElementById('judul')
         const elementSubJudul = document.querySelector('.subjudul')
         const image = document.getElementById('gambar')
+        const area = document.getElementById('area')
+        const content = document.getElementById('content')
 
 
         elementJudul.textContent = "Ini adalah output dari DOM"
@@ -40,6 +59,21 @@
 
         image.setAttribute('src','https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ1uiF1L223M9iNw-o926mzjZOZcD-jQbax8g&s')
         image.setAttribute('width', '300px')
+
+        const gambarBaru = document.createElement('img')
+        gambarBaru.setAttribute('src', 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ1uiF1L223M9iNw-o926mzjZOZcD-jQbax8g&s')
+        gambarBaru.setAttribute('width', '300px')
+
+        content.innerHTML = `<h1 class="text-small">Hallo saya sedang belajar DOM</h1>`
+
+
+
+
+        area.appendChild(gambarBaru)
+
+
+
+
 
 
     </script>
