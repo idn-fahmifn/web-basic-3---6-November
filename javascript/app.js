@@ -234,18 +234,50 @@ for (let i = 0; i < buah.length; i++) {
   console.log("Saya suka buah buahan, yaitu : ", buah[i]);
 }
 
-// looping dengan while
-const secret = "fahmi";
-let tebak = "";
-let count = 0;
+for (let i = 10; i > 0; i--) {
+  console.log("Mundur dari - ", i);
+}
 
-while (tebak.toLowerCase() !== secret) {
-  tebak = prompt("Hayoo aku siapa?");
-  count++;
-  if(tebak !== secret ){
-    alert(`wkwkwk salah 😋, Kamu udah nebak sebanyak ${count} kali`)
+// looping dengan while
+// const secret = "Fahmi";
+// let tebak = "";
+// let count = 0;
+
+// while (tebak.toLowerCase() !== secret.toLowerCase()) {
+//   tebak = prompt("Hayoo aku siapa?");
+//   count++;
+//   if(tebak !== secret ){
+//     alert(`wkwkwk salah 😋, Kamu udah nebak sebanyak ${count} kali`)
+//   }
+// }
+// if (tebak.toLowerCase() === secret.toLowerCase()) {
+//   alert("Yeay akhirnya bener juga");
+// }
+
+function tebak() {
+  const secret = "fahmi";
+  let tebak = "";
+  let count = 0;
+
+  while (tebak.toLowerCase() !== secret) {
+    tebak = prompt("Hayoo aku siapa?");
+    count++;
+    if (tebak !== secret) {
+      alert(`wkwkwk salah 😋, Kamu udah nebak sebanyak ${count} kali`);
+    }
+  }
+  if (tebak.toLowerCase() === secret) {
+    alert("Yeay akhirnya bener juga");
   }
 }
-if (tebak.toLowerCase() === secret) {
-  alert("Yeay akhirnya bener juga");
+
+// basic functuon
+function namaFunction(){
+  console.log("Hallo ini adalah function")
 }
+
+// function dengan parameter dan argumen
+function jumlah(bil1, bil2){
+  return bil1 + bil2
+}
+console.log('Hasil penjumlahan', jumlah(30, 50))
