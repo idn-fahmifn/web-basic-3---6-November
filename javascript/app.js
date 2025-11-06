@@ -299,14 +299,18 @@ console.log(`Luas persegi panjang adalah : ${persegiPanjang(10, 40)}`)
 
 // fungsi menampilkan kalkulator
 function calculator(){
+  
 
   // menampilkan 2 buah prompt untuk input angka
-  let input1 = prompt("Masukan Angka Pertama")
-  let input2 = prompt("Masukan Angka Kedua")
+  let input1
+  let input2
 
   if(isNaN(input1) || isNaN(input2)) {
     // error handling jika inputnya bukan sebuah angka
-    alert("Input yang anda masukan tidak bisa dihitung")
+    while(isNaN(input1) || isNaN(input2)){
+      input1 = prompt("Masukan angka ke 1")
+      input2 = prompt("Masukan angka ke 2")
+    }
   }
 
   let operator = prompt("Masukan operator (+, -, /, *)") // menentukan operator
