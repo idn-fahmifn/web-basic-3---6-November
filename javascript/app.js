@@ -296,3 +296,33 @@ console.log(`Luas persegi panjang adalah : ${persegiPanjang(10, 40)}`)
 
 // kalkulator sederhana. 
 // menghitung 2 bilangan yang ditentukan operatorny
+
+// fungsi menampilkan kalkulator
+function calculator(){
+
+  // menampilkan 2 buah prompt untuk input angka
+  let input1 = prompt("Masukan Angka Pertama")
+  let input2 = prompt("Masukan Angka Kedua")
+
+  if(isNaN(input1) || isNaN(input2)) {
+    // error handling jika inputnya bukan sebuah angka
+    alert("Input yang anda masukan tidak bisa dihitung")
+  }
+
+  let operator = prompt("Masukan operator (+, -, /, *)") // menentukan operator
+  let hasil;
+
+  switch(operator){
+  case "+" :
+    hasil = penjumlahan(Number(input1), Number(input2))
+    break;
+
+    default :
+    alert('Input yang kamu masukan salah');
+  }
+  alert(`hasil dari ${input1} ${operator} ${input2} adalah ${hasil}`)
+}
+
+// buatkan function untuk operatornya
+const penjumlahan = (param1, param2) => param1 + param2
+
