@@ -281,3 +281,18 @@ function jumlah(bil1, bil2){
   return bil1 + bil2
 }
 console.log('Hasil penjumlahan', jumlah(30, 50))
+
+// function expression
+const persegi = function(sisi) {
+  return sisi * sisi
+}
+
+let luasPersegi = persegi(40);
+console.log(`Luas persegi adalah ${luasPersegi}`);
+
+// arrow
+const persegiPanjang = (panjang, lebar) => panjang * lebar
+console.log(`Luas persegi panjang adalah : ${persegiPanjang(10, 40)}`)
+
+// kalkulator sederhana. 
+// menghitung 2 bilangan yang ditentukan operatorny
