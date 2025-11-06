@@ -320,6 +320,15 @@ function calculator(){
   case "+" :
     hasil = penjumlahan(Number(input1), Number(input2))
     break;
+    case "-" :
+    hasil = pengurangan(Number(input1), Number(input2))
+    break;
+    case "*" :
+    hasil = perkalian(Number(input1), Number(input2))
+    break;
+    case "/" :
+    hasil = pembagian(Number(input1), Number(input2))
+    break;
 
     default :
     alert('Input yang kamu masukan salah');
@@ -329,4 +338,7 @@ function calculator(){
 
 // buatkan function untuk operatornya
 const penjumlahan = (param1, param2) => param1 + param2
+const pengurangan = (param1, param2) => param1 - param2
+const perkalian = (param1, param2) => param1 * param2
+const pembagian = (param1, param2) => param1 / param2
 
