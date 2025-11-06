@@ -45,25 +45,17 @@
 
     <div class="container mt-4">
       <div class="row" id="getData">
-        <div class="col-md-3 mt-4">
-          <div class="card p-2">
-            <img
-              src="https://cdn.jsdelivr.net/gh/faker-js/assets-person-portrait/male/512/80.jpg"
-              class="img-thumbnail"
-              alt="Gambar Orang"
-            />
-            <h4 class="mt-4">Nama Orang</h4>
-            <h6 class="text-danger">Nama instansi</h6>
-            <p>alamat orang nya</p>
-            <a href="" class="btn btn-success">Follow</a>
-          </div>
-        </div>
+        <!-- data di load dari javascript -->
       </div>
     </div>
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
 
     <script>
+
+      const rowData = document.getElementById('getData')
+
+
       // ambil data dengan asyncronus
       async function loadData() {
         // untuk mengkesekusi dari kode yang kita buat
@@ -84,23 +76,43 @@
           // loop data dari array di api ke dalam bentuk object
 
           data.forEach((item) => {
-            const col = document.getElementById("div");
+            const col = document.createElement("div");
             col.setAttribute("class", "col-md-3 mt-4");
 
-            const card = document.getElementById("div");
+            const card = document.createElement("div");
             card.setAttribute("class", "card p-2");
 
-            const image = document.getElementById("img");
+            const image = document.createElement("img");
             image.setAttribute("class", "img-thumbnail");
+            image.setAttribute("src", item.gambar);
+            image.setAttribute("alt", "Gambar User");
 
-            const userName = document.getElementById("h4");
+            const userName = document.createElement("h4");
             userName.setAttribute("class", "mt-4");
+            userName.textContent = item.nama
 
-            const instansi = document.getElementById("h4");
+            const instansi = document.createElement("h6");
             instansi.setAttribute("class", "text-danger");
+            instansi.textContent = item.instansi
 
-            const btnFollow = document.getElementById("a");
-            btn-follow.setAttribute("class", "btn btn-success");
+            const alamat = document.createElement("p");
+            alamat.setAttribute("class", "text-muted");
+            alamat.textContent = item.alamat
+
+
+            const btnFollow = document.createElement("a");
+            btnFollow.setAttribute("class", "btn btn-success");
+            btnFollow.setAttribute("href", "https://linkedin.com");
+            btnFollow.textContent = "Follow ✅"
+
+
+            rowData.appendChild(col)
+            col.appendChild(card)
+            card.appendChild(image)
+            card.appendChild(userName)
+            card.appendChild(instansi)
+            card.appendChild(alamat)
+            card.appendChild(btnFollow)
 
           });
         } catch {
